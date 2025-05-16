@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+IT+Moderna:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');">
+    
+    <style>
+        .a{
+            height: 150px;width: 200px;margin-left: 800px;
+        }
+
+        .b{
+            border: 2px solid black;width: 600px;text-align: center;margin-left: 600px;border-radius: 20px;
+        }
+
+        .b1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .b2{
+            font-size: 20px;line-height: 40px;
+        }
+
+        #but{
+            background-color: rgb(255,216,20);width: 300px;height: 50px;border-radius: 50px;border-color:rgb(255,216,20);text-decoration: none;margin-top: 20px;font-size: larger;
+        }
+
+        #but:hover{
+            cursor: pointer;
+        }
+
+        .c:hover{
+            color: rgb(205, 55, 55);cursor: pointer;
+        }
+
+        .d{
+            text-align: center;margin-left: -130px;margin-top: 50px;font-size: larger;
+        }
+
+        #but_2{
+            color: black;background-color: white;height: 50px;width: 300px;border-radius: 50px;font-size: larger;
+        }
+
+        #but_2:hover{
+            cursor: pointer;background-color: rgba(128, 128, 128, 0.342);
+        }
+
+        .h{
+            align-content: center;justify-content: center;display: flex;margin-left: -140px;margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="Amazon.png" class="a" alt="">
+    <fieldset class="b">
+        <form action="/webpage" method="post">
+            <div class="b1">
+                <tr>
+                    <h2 style="text-align: left;padding: 10px;font-size: 45px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Sign In</h2>
+                    <label for=""><h1 style="font-size: 40px;">Email:</h1></label>
+                    <input type="text" name="email" style="height: 40px;width: 250px;border-radius: 10px;font-size: large;" required>
+                </tr>
+
+                <tr>
+                    <label for=""><h1 style="font-size: 40px;">Password:</h1></label>
+                    <input type="text" name="password" style="height: 40px;width: 250px;border-radius: 10px;font-size: large;" required>
+                </tr><br><br>
+            </div>
+
+            <tr>
+                <button id="but">Continue</button>
+            </tr>
+
+            <tr>
+                <div class="b2">
+                    <p>By continuing, you agree to Amazon's <span style="color: rgb(0, 140, 255);"><u class="c">Conditions of <br>Use</u></span> and <span style="color: rgb(0, 140, 255);"><u class="c">Privacy Notice</u></span>.</p>
+                </div>
+            </tr>
+        </form>
+    </fieldset>
+</body>
+</html>
